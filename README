@@ -54,4 +54,4 @@ your .emacs:
 (global-set-key "\M-p"  'mmm-parse-buffer)
 
 
-- pjenvey@groovie.org
+- pjenvey@underboss.org
