@@ -79,7 +79,8 @@
     :submode text-mode
     :face mmm-comment-submode-face
     :front "^[ \t]*##"
-    :back "$"
+    :back "\n"
+    :front-delim 0
     :insert ((?# mako-comment nil @ "##" @ " " _ @
                  '(mmm-mako-end-line) "\n" @)))
    (mako-init
