@@ -54,7 +54,8 @@
   "Matches any Mako tag name after the \"<%\".")
 
 (defun mmm-mako-verify-python-block ()
-  (not (looking-at mmm-mako-block-tags-regexp)))
+  (save-match-data
+    (not (looking-at mmm-mako-block-tags-regexp))))
 
 ;;}}}
 ;;{{{ Add Classes
