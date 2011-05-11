@@ -85,33 +85,33 @@
     :insert ((?# mako-comment nil @ "##" @ " " _ @
                  '(mmm-mako-end-line) "\n" @)))
    (mako-init
-    :submode python
+    :submode python-mode
     :face mmm-init-submode-face
     :front "<%!"
     :back "%>"
     :insert ((?! mako-<%!-%> nil @ "<%!" @ "\n" _ "\n" @ "%>" @)))
    (mako-python
-    :submode python
+    :submode python-mode
     :face mmm-code-submode-face
     :front "<%"
     :front-verify mmm-mako-verify-python-block
     :back "%>"
     :insert ((?% mako-<%-%> nil @ "<%" @ "\n" _ "\n" @ "%>" @)))
    (mako-python-expression
-    :submode python
+    :submode python-mode
     :face mmm-output-submode-face
     :front "${"
     :back "}"
     :insert ((?$ mako-${-} nil @ "${" @ _ @ "}" @)))
    (mako-control
-    :submode python
+    :submode python-mode
     :face mmm-code-submode-face
     :front "^[ \t]*%[^>]"
     :back "$"
     :insert ((tab mako-%-line nil @ "%" @ " " _ @
                   '(mmm-mako-end-line) "\n" @)))
    (mako-def
-    :submode python
+    :submode python-mode
     :face mmm-declaration-submode-face
     :front "<%def[ \t]+name=\\([\"']\\)"
     :save-matches 1
@@ -119,7 +119,7 @@
     :insert ((?d mako-<%def> nil @ "<%def name=\"" @ _ "()" @ "\">" @
                  "\n</%def>")))
    (mako-call
-    :submode python
+    :submode python-mode
     :face mmm-output-submode-face
     :front "<%call[ \t]+expr=\\([\"']\\)"
     :save-matches 1
@@ -127,7 +127,7 @@
     :insert ((?c mako-<%call> nil @ "<%call expr=\"" @ _ "()" @ "\">"
                  @ "\n</%call>")))
    (mako-page
-    :submode python
+    :submode python-mode
     :face mmm-declaration-submode-face
     :front "<%page[ \t]+"
     :back "/>"
