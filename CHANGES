@@ -1,3 +1,8 @@
+1.1:
+
+- Add some metadata for MELPA. fixes #5 [80d6ae309538]
+
+
 1.0:
 
 - fix handling of empty one line comments patch from taupan fixes #2
