@@ -1,10 +1,12 @@
 ;;; mmm-mako.el --- MMM submode class for Mako Templates
-;;;     
+;;;
 
-;; Copyright (C) 2007 by Philip Jenvey
+;; Copyright (C) 2007-2012 by Philip Jenvey
 
-;; Author: Philip Jenvey <pjenvey@groovie.org>
-;; Version: 0.2 $Id$
+;; Author: Philip Jenvey <pjenvey@underboss.org>
+;; URL: https://bitbucket.org/pjenvey/mmm-mako
+;; Version: 1.1
+;; Package-Requires: ((mmm-mode "0.4.8"))
 
 ;;{{{ GPL
 
